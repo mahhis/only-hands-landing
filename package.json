@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",
+  "homepage": "https://mahhis.github.io/only-hands-front",
   "scripts": {
     "start": "vite",
     "deploy": "gh-pages -d dist",

@@ -1,3 +1,8 @@
+import Slide1Img from '/img/slide1.webp'
+import Slide2Img from '/img/slide2.webp'
+import Slide3Img from '/img/slide3.webp'
+import Slide4Img from '/img/slide4.webp'
+
 export default function () {
   const openModal = (src: string) => {
     const elem: HTMLDialogElement = document.getElementById(
@@ -21,7 +26,7 @@ export default function () {
             background: 0,
           }}
         >
-          <img src="/img/slide1.jpg" className="w-full" />
+          <img src={Slide1Img} className="w-full" />
         </div>
         <form method="dialog" className="modal-backdrop">
           <button>close</button>
@@ -31,33 +36,33 @@ export default function () {
       <div className="carousel w-full">
         <div id="slide1" className="carousel-item relative w-full">
           <img
-            src="/img/slide1.webp"
+            src={Slide1Img}
             className="w-full"
-            onClick={() => openModal('/img/slide1.webp')}
+            onClick={() => openModal(Slide1Img)}
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"></div>
         </div>
         <div id="slide2" className="carousel-item relative w-full">
           <img
-            src="/img/slide2.webp"
+            src={Slide2Img}
             className="w-full"
-            onClick={() => openModal('/img/slide2.webp')}
+            onClick={() => openModal(Slide2Img)}
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"></div>
         </div>
         <div id="slide3" className="carousel-item relative w-full">
           <img
-            src="/img/slide3.webp"
+            src={Slide3Img}
             className="w-full"
-            onClick={() => openModal('/img/slide3.webp')}
+            onClick={() => openModal(Slide3Img)}
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"></div>
         </div>
         <div id="slide4" className="carousel-item relative w-full">
           <img
-            src="/img/slide4.webp"
+            src={Slide4Img}
             className="w-full"
-            onClick={() => openModal('/img/slide4.webp')}
+            onClick={() => openModal(Slide4Img)}
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"></div>
         </div>

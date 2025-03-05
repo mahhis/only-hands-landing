@@ -1,5 +1,6 @@
 import { Link } from 'preact-router'
 import { useAtom } from 'jotai'
+import ChoiceImg from '/img/choice.webp'
 import Question from 'components/Question'
 import payNow from 'atoms/payNow'
 
@@ -27,10 +28,7 @@ export default function () {
           </h2>
         </div>
 
-        <img
-          src="/img/choice.webp"
-          style={{ marginRight: '3%', marginLeft: '3%' }}
-        />
+        <img src={ChoiceImg} style={{ marginRight: '3%', marginLeft: '3%' }} />
       </div>
       <div className="flex w-full" style={{ marginBottom: '5%' }}>
         <div

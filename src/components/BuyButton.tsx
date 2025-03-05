@@ -1,4 +1,6 @@
 import { Link } from 'preact-router'
+import BuyImg from '/img/buy.webp'
+
 export default function () {
   return (
     <div className="flex justify-center" style={{ marginTop: '0%' }}>
@@ -17,7 +19,7 @@ export default function () {
         }}
       >
         <img
-          src="/img/buy.webp"
+          src={BuyImg}
           alt="Button Image"
           style={{
             padding: '0',
