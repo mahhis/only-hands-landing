@@ -1,15 +1,18 @@
+import { Route, Router } from 'preact-router'
+
 import Delivery from 'pages/Delivery'
 import Main from 'pages/Main'
 import Pay from 'pages/Pay'
-import Router from 'preact-router'
+import WeAreClosed from 'pages/WeAreClosed'
 
 export default function () {
   return (
     <Router>
-      <Main     path="/" />
-      <Main     path="/:slide" />
-      <Delivery path="/address" />
-      <Pay      path="/pay" />
+      <Route path="/" component={Main} />
+      <Route path="/:slide" component={Main} />
+      <Route path="/address" component={Delivery} />
+      <Route path="/pay" component={Pay} />
+      <Route path="/close" component={WeAreClosed} />
     </Router>
   )
 }

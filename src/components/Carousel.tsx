@@ -1,7 +1,4 @@
-import { useState } from 'preact/hooks'
-
 export default function () {
-  const [selectedSlide, setSelectedSlide] = useState(1)
   const openModal = (src: string) => {
     const elem: HTMLDialogElement = document.getElementById(
       'img_on_screen'
@@ -66,32 +63,16 @@ export default function () {
         </div>
       </div>
       <div className="flex justify-center w-full py-2 gap-2">
-        <a
-          href="#slide1"
-          className={`btn btn-xs ${selectedSlide === 1 ? 'border-white' : ''}`}
-          onClick={() => setSelectedSlide(1)}
-        >
+        <a href="#slide1" className={`btn btn-xs `}>
           1
         </a>
-        <a
-          href="#slide2"
-          className={`btn btn-xs ${selectedSlide === 2 ? 'border-white' : ''}`}
-          onClick={() => setSelectedSlide(2)}
-        >
+        <a href="#slide2" className={`btn btn-xs`}>
           2
         </a>
-        <a
-          href="#slide3"
-          className={`btn btn-xs ${selectedSlide === 3 ? 'border-white' : ''}`}
-          onClick={() => setSelectedSlide(3)}
-        >
+        <a href="#slide3" className={`btn btn-xs `}>
           3
         </a>
-        <a
-          href="#slide4"
-          className={`btn btn-xs ${selectedSlide === 4 ? 'border-white' : ''}`}
-          onClick={() => setSelectedSlide(4)}
-        >
+        <a href="#slide4" className={`btn btn-xs `}>
           4
         </a>
       </div>

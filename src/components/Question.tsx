@@ -1,19 +1,18 @@
-import { askQuestion } from 'helpers/api'
 import { useState } from 'preact/hooks'
 
-export default function () {
-  const questions = [
-    'Why is the price so high?',
-    'Will it definitely fit my screen??',
-    'How is the camera connected??',
-    'I dont know what to cook for dinner today',
-    'I want to chat, I have a lot of questions',
-    'Do I really need it??',
-  ]
+const questions = [
+  'Why is the price so high?',
+  'Will it definitely fit my screen??',
+  'How is the camera connected??',
+  'I dont know what to cook for dinner today',
+  'I want to chat, I have a lot of questions',
+  'Do I really need it??',
+]
 
+export default function () {
   const [contact, setContact] = useState('')
   const [question, setQuestion] = useState('')
-  const [loading, setLoading] = useState(false)
+  const [loading] = useState(false)
 
   const generatePlaceholderText = () => {
     const textarea = document.querySelector('.textarea') as HTMLTextAreaElement
@@ -23,22 +22,22 @@ export default function () {
       textarea.placeholder = randomQuestion
     }
   }
-  const handleSend = async () => {
-    if (contact && question) {
-      setLoading(true)
-      await askQuestion({
-        contact: contact,
-        question: question,
-      })
-      setLoading(false)
-      setContact('')
-      setQuestion('')
-      const elem: HTMLDialogElement = document.getElementById(
-        'send'
-      ) as HTMLDialogElement
-      elem.showModal()
-    }
-  }
+  // const handleSend = async () => {
+  //   if (contact && question) {
+  //     setLoading(true)
+  //     await askQuestion({
+  //       contact: contact,
+  //       question: question,
+  //     })
+  //     setLoading(false)
+  //     setContact('')
+  //     setQuestion('')
+  //     const elem: HTMLDialogElement = document.getElementById(
+  //       'send'
+  //     ) as HTMLDialogElement
+  //     elem.showModal()
+  //   }
+  // }
 
   return (
     <div
@@ -109,9 +108,9 @@ export default function () {
           ></textarea>
         </label>
         <div className="flex justify-end" style={{ marginTop: '3%' }}>
-          <button className="btn btn-primary" onClick={handleSend}>
+          <a className="btn btn-primary text-xl" href={'/close'}>
             {loading ? 'Sending...' : 'Send'}
-          </button>
+          </a>
         </div>
       </div>
     </div>
