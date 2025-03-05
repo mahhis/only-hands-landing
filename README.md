@@ -10,7 +10,7 @@ Only Hands is a startup project designed to turn non-touch screens into touch-en
 
 ## Live Demo (works on github pages)
 
-[Only Hands - Landing Page](https://mahhis.github.io/only-hands-front/)
+[Only Hands - Landing Page](https://mahhis.github.io/only-hands-landing/)
 
 ## Installation
 
@@ -18,12 +18,12 @@ To install and run the application, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/mahhis/only-hands-front.git
+    git clone https://github.com/mahhis/only-hands-landing.git
     ```
 
 2. Navigate to the project folder:
     ```bash
-    cd only-hands-front
+    cd only-hands-landing
     ```
 
 3. Install dependencies using Yarn:

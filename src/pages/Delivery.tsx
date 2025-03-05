@@ -251,7 +251,7 @@ export default function () {
       </label>
 
       <div className="flex justify-end">
-        <a className="btn btn-primary text-xl" href={'/close'}>
+        <a className="btn btn-primary text-xl" href={'./close'}>
           {loading ? 'Finishing...' : 'Finish'}
         </a>
       </div>

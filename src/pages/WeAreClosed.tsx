@@ -19,7 +19,7 @@ export default function () {
         </div>
       </div>
       <div className="flex justify-center">
-        <a className="btn btn-primary text-xl" href={'/'}>
+        <a className="btn btn-primary text-xl" href="./">
           Main page
         </a>
       </div>

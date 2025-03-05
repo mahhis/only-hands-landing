@@ -38,7 +38,7 @@ export default function () {
           <Link
             className="btn btn-error  w-full h-full"
             style={{ width: 'auto', fontSize: '3rem' }}
-            href="/address"
+            href="./address"
             onClick={() => setPayNow('true')}
           >
             149$
@@ -52,7 +52,7 @@ export default function () {
           <Link
             className="btn btn-info  w-full h-full"
             style={{ width: 'auto', fontSize: '3rem' }}
-            href="/address"
+            href="./address"
             onClick={() => setPayNow('false')}
           >
             199$

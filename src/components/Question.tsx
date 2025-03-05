@@ -108,7 +108,7 @@ export default function () {
           ></textarea>
         </label>
         <div className="flex justify-end" style={{ marginTop: '3%' }}>
-          <a className="btn btn-primary text-xl" href={'/close'}>
+          <a className="btn btn-primary text-xl" href={'./close'}>
             {loading ? 'Sending...' : 'Send'}
           </a>
         </div>

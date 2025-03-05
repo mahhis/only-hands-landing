@@ -8,6 +8,7 @@ import WeAreClosed from 'pages/WeAreClosed'
 export default function () {
   return (
     <Router>
+      {/* /only-hands-landing this line is necessary for the correct operation of the project on the github page */}
       <Route path="/" component={Main} />
       <Route path="/:slide" component={Main} />
       <Route path="/address" component={Delivery} />

@@ -6,7 +6,7 @@ export default function () {
     <div className="flex justify-center" style={{ marginTop: '0%' }}>
       <Link
         className="btn btn-primary"
-        href="/pay"
+        href="./pay"
         style={{
           display: 'flex',
           alignItems: 'center',
