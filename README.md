@@ -10,7 +10,7 @@ Only Hands is a startup project designed to turn non-touch screens into touch-en
 
 ## Live Demo (works on github pages)
 
-[Only Hands - Landing Page](https://mahhis.github.io/only-hands-landing/)
+[Only Hands - Landing Page](https://only-hands-landing.pages.dev)
 
 ## Installation
 
