@@ -13,7 +13,7 @@ interface FormData {
   postCode: string
 }
 
-export default function () {
+export default function Delivery() {
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',

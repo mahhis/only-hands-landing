@@ -1,4 +1,4 @@
-export default function () {
+export default function WeAreClosed() {
   return (
     <div className="container mx-auto prose w-full">
       <div className="card w-full">

@@ -3,7 +3,7 @@ import ChoiceImg from '/img/choice.webp'
 import Question from 'components/Question'
 import payNow from 'atoms/payNow'
 
-export default function () {
+export default function Pay() {
   const [, setPayNow] = useAtom(payNow)
   return (
     <div className="container mx-auto  prose w-full">

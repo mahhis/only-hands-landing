@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Only hands</title>
     <meta name="description" content="Only hands" />
+    <script>
+      // Check if the URL has a redirect parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      const redirectPath = urlParams.get('redirect');
+  
+      if (redirectPath) {
+          // If a redirect path is found, navigate to that path
+          window.history.replaceState({}, document.title, redirectPath);
+          window.location.reload();
+      }
+  </script>
   </head>
   <body>
     <noscript>Please, turn on JavaScript to see this page.</noscript>

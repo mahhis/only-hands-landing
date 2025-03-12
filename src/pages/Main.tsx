@@ -6,7 +6,7 @@ import Question from 'components/Question'
 import TextSJ from 'components/TextSJ'
 import TextWhatIs from 'components/TextWhatIs'
 
-export default function () {
+export default function Main() {
   return (
     <div className="container mx-auto w-full p-5 prose">
       <img src={MainPhraseImg} style={{ width: 'auto', marginBottom: 0 }} />
