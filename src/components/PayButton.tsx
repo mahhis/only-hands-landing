@@ -1,8 +1,7 @@
-import { Link } from 'preact-router'
 export default function () {
   return (
-    <Link className="btn btn-primary" href="./pay">
+    <a className="btn btn-primary" href="./pay">
       Pay
-    </Link>
+    </a>
   )
 }

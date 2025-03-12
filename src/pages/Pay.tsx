@@ -1,4 +1,3 @@
-import { Link } from 'preact-router'
 import { useAtom } from 'jotai'
 import ChoiceImg from '/img/choice.webp'
 import Question from 'components/Question'
@@ -35,28 +34,28 @@ export default function () {
           className="grid flex-grow  card  rounded-box place-items-center"
           style={{ marginRight: '3%', marginLeft: '3%' }}
         >
-          <Link
+          <a
             className="btn btn-error  w-full h-full"
             style={{ width: 'auto', fontSize: '3rem' }}
             href="./address"
             onClick={() => setPayNow('true')}
           >
             149$
-          </Link>
+          </a>
         </div>
 
         <div
           className="grid  flex-grow  card  rounded-box place-items-center"
           style={{ marginRight: '3%', marginLeft: '3%' }}
         >
-          <Link
+          <a
             className="btn btn-info  w-full h-full"
             style={{ width: 'auto', fontSize: '3rem' }}
             href="./address"
             onClick={() => setPayNow('false')}
           >
             199$
-          </Link>
+          </a>
         </div>
       </div>
       <div className=" p-2">

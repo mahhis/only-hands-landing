@@ -4,7 +4,7 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 import { visualizer } from 'rollup-plugin-visualizer'
 
 export default defineConfig({
-  base: '/only-hands-landing/',
+  base: "/only-hands-landing/",
   plugins: [preact(), tsconfigPaths()],
   build: {
     rollupOptions: {

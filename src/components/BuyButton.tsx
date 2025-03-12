@@ -1,10 +1,9 @@
-import { Link } from 'preact-router'
 import BuyImg from '/img/buy.webp'
 
 export default function () {
   return (
     <div className="flex justify-center" style={{ marginTop: '0%' }}>
-      <Link
+      <a
         className="btn btn-primary"
         href="./pay"
         style={{
@@ -27,7 +26,7 @@ export default function () {
             marginTop: 0,
           }}
         />
-      </Link>
+      </a>
     </div>
   )
 }
