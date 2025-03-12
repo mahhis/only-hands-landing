@@ -9,7 +9,7 @@ export default function () {
   return (
     <div className="container mx-auto">
       <Suspense fallback={<p>Loading...</p>}>
-        <Router base="/only-hands-landing">
+        <Router>
           <Route path="/" component={Main} />
           <Route path="/address" component={Delivery} />
           <Route path="/pay" component={Pay} />
