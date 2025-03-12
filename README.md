@@ -8,7 +8,7 @@ Only Hands is a startup project designed to turn non-touch screens into touch-en
  The project is currently closed due to an issue with non-touch screens not being designed for touch use. When used as a touch interface, these screens can develop black spots after prolonged contact. Additionally, the landing page was primarily designed with mobile devices in mind, and the User Interface (UI) and User Experience (UX) are not fully optimized for desktop views.
 
 
-## Live Demo (works on github pages)
+## Live Demo (works on Cloude Flare pages)
 
 [Only Hands - Landing Page](https://only-hands-landing.pages.dev)
 
@@ -40,6 +40,7 @@ To install and run the application, follow these steps:
 
 - **Frontend Framework**: Preact
 - **UI Components**: daisyUI
+- **Styles**: Tailwind CSS
 - **Build Tool**: Vite
 
 ## License
